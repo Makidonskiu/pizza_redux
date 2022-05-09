@@ -1,20 +1,22 @@
-import React, { useEffect, useState } from "react";
-
-// import axios from "axios";
-
+import React, { useEffect } from "react";
+import axios from "axios";
 import { Routes, Route } from "react-router-dom";
+import { useDispatch } from 'react-redux';
+
 import { Header } from "./components/index";
 import { Home, Cart } from "./pages/index";
+import { setPizzas } from './redux/actions/pizzas'
 
 function App() {
-  const [pizzas, setPizzas] = useState([])
+ const dispatch = useDispatch();
 
-  // В App асинхронный запрос ************************************
+  // В App асинхронный запрос при старте странице ************************************
 
   useEffect( () => {
-    fetch('http://localhost:3000/pizza_react/db.json')
-      .then( res => res.json())
-      .then( json => setPizzas(json.pizzas) )
+      axios.get('http://myjson.dit.upm.es/api/bins/8vhz')
+        .then( ({data}) => {
+          dispatch(setPizzas(data.pizzas))
+        });
   }, [])
   
   return (
@@ -22,7 +24,7 @@ function App() {
       <Header/>
       <div className="content">
       <Routes>
-        <Route path = '/pizza_react/' element = {<Home pizzas = {pizzas}/>}/>
+        <Route path = '/pizza_react/' element = {<Home/>}/>
         <Route path = '/cart' element = {<Cart/>}/>
       </Routes>
       </div>

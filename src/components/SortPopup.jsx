@@ -4,6 +4,8 @@ export const SortPopup = ({ items }) => {
   const [visiblePopup, setVisiblePopup] = useState(false);
   const [active, setActive] = useState(0);
   const sortRef = useRef(null);
+  // ******************** вытащил name из items *************************
+  const activeLabel = items[active].name
 
   const toggleVisiblePopup = () => {
     setVisiblePopup(!visiblePopup);
@@ -41,7 +43,7 @@ export const SortPopup = ({ items }) => {
           />
         </svg>
         <b>Сортировка по:</b>
-        <span onClick={toggleVisiblePopup}>{items[active]}</span>
+        <span onClick={toggleVisiblePopup}>{activeLabel}</span>
       </div>
       {visiblePopup && (
         <div className="sort__popup">
@@ -51,7 +53,8 @@ export const SortPopup = ({ items }) => {
                 className={active === index ? 'active' : ''}
                 onClick={() => onSelectItem(index)}
                 key={`${item}_${index}`}>
-                {item}
+                {/* ********************** item теперь объект и я вытащил name ********************/}
+                {item.name}
               </li>
             ))}
           </ul>
