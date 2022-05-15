@@ -1,31 +1,19 @@
-import React, { useEffect } from "react";
-import axios from "axios";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { useDispatch } from 'react-redux';
 
 import { Header } from "./components/index";
-import { Home, Cart } from "./pages/index";
-import { setPizzas } from './redux/actions/pizzas'
+import { Home, Cart, All } from "./pages/index";
 
 function App() {
- const dispatch = useDispatch();
-
-  // В App асинхронный запрос при старте странице ************************************
-
-  useEffect( () => {
-      axios.get('http://myjson.dit.upm.es/api/bins/8vhz')
-        .then( ({data}) => {
-          dispatch(setPizzas(data.pizzas))
-        });
-  }, [])
-  
+  // В App асинхронный запрос при старте странице - перекинул в HOME ************************************
   return (
     <div className="wrapper">
       <Header/>
       <div className="content">
       <Routes>
-        <Route path = '/pizza_react/' element = {<Home/>}/>
+        <Route path = '/' element = {<Home/>}/>
         <Route path = '/cart' element = {<Cart/>}/>
+        <Route path = '*' element = {<All/>}/>
       </Routes>
       </div>
     </div>
@@ -33,3 +21,5 @@ function App() {
 }
 
 export default App;
+
+// const url = 'https://github.com/Makidonskiu/pizza_redux.git'

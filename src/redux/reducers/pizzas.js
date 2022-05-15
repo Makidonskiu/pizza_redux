@@ -1,4 +1,4 @@
-import { SET_PIZZAS} from '../actions/actionTypes';
+import { SET_PIZZAS, SET_LOADED} from '../actions/actionTypes';
 
 const initialState = {
   items: [],
@@ -7,9 +7,19 @@ const initialState = {
 
 export const pizzas = (state = initialState, action) => {
   switch (action.type) {
-    case SET_PIZZAS: {
-      return { ...state, items: action.payload };
-    }
+    case SET_PIZZAS: 
+      return { 
+        ...state, 
+        items: action.payload,
+        isLoaded : true,
+       };
+    
+    case SET_LOADED: 
+      return { 
+        ...state, 
+        items: action.payload
+       };
+    
     default:
       return state;
   }

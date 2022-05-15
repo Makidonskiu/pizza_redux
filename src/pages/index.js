@@ -1,9 +1,11 @@
 import { Home } from "./Home";
 import { Cart } from "./Cart";
-import { PizzaBlock } from "./PizzaBlock";
+import { All } from "./All";
+import { PizzaBlock } from "../components/PizzaBlock/PizzaBlock";
 
 export {
     Home, 
     Cart,
-    PizzaBlock
+    PizzaBlock,
+    All
 }
