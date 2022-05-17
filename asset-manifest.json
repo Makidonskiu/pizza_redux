@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Makidonskiu/pizza_redux.git/static/css/main.50780508.css",
-    "main.js": "/Makidonskiu/pizza_redux.git/static/js/main.856a9c67.js",
+    "main.css": "/Makidonskiu/pizza_redux.git/static/css/main.46c0a128.css",
+    "main.js": "/Makidonskiu/pizza_redux.git/static/js/main.36eda32f.js",
     "static/media/ProximaNova-Regular.eot": "/Makidonskiu/pizza_redux.git/static/media/ProximaNova-Regular.d97f8f32c098b28c3ab0.eot",
     "static/media/ProximaNova-Regular.ttf": "/Makidonskiu/pizza_redux.git/static/media/ProximaNova-Regular.b078618b41b9b6629ea0.ttf",
     "static/media/ProximaNova-Bold.eot": "/Makidonskiu/pizza_redux.git/static/media/ProximaNova-Bold.787088b281e017f8c449.eot",
@@ -14,13 +14,14 @@
     "static/media/ProximaNova-Bold.woff": "/Makidonskiu/pizza_redux.git/static/media/ProximaNova-Bold.1f267da183b3d4fe3d5b.woff",
     "static/media/ProximaNova-Extrabld.woff": "/Makidonskiu/pizza_redux.git/static/media/ProximaNova-Extrabld.64f095e95e4018946cb1.woff",
     "static/media/ProximaNova-Black.woff": "/Makidonskiu/pizza_redux.git/static/media/ProximaNova-Black.131eab64b8a971a4fc73.woff",
+    "static/media/empty-cart.png": "/Makidonskiu/pizza_redux.git/static/media/empty-cart.db905d1f4b063162f25b.png",
     "static/media/pizza-logo.svg": "/Makidonskiu/pizza_redux.git/static/media/pizza-logo.56ac87032d8f6fdf863326acd06c0d97.svg",
     "index.html": "/Makidonskiu/pizza_redux.git/index.html",
-    "main.50780508.css.map": "/Makidonskiu/pizza_redux.git/static/css/main.50780508.css.map",
-    "main.856a9c67.js.map": "/Makidonskiu/pizza_redux.git/static/js/main.856a9c67.js.map"
+    "main.46c0a128.css.map": "/Makidonskiu/pizza_redux.git/static/css/main.46c0a128.css.map",
+    "main.36eda32f.js.map": "/Makidonskiu/pizza_redux.git/static/js/main.36eda32f.js.map"
   },
   "entrypoints": [
-    "static/css/main.50780508.css",
-    "static/js/main.856a9c67.js"
+    "static/css/main.46c0a128.css",
+    "static/js/main.36eda32f.js"
   ]
 }
