@@ -21,5 +21,3 @@ function App() {
 }
 
 export default App;
-
-// const url = 'https://github.com/Makidonskiu/pizza_redux.git'
