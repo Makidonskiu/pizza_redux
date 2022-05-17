@@ -127,7 +127,7 @@ export const Cart = () => {
             </span>
           </div>
           <div className="cart__bottom-buttons">
-            <Link to='/' className="button button--outline button--add go-back-btn">
+            <Link to='/pizza_redux' className="button button--outline button--add go-back-btn">
               <svg
                 width="8"
                 height="14"
@@ -156,7 +156,7 @@ export const Cart = () => {
               Для того, чтобы заказать пиццу, перейди на главную страницу.
             </p>
             <img src={cartEmtyImage} alt="Empty cart" />
-            <Link to="/" className="button button--black">
+            <Link to="/pizza_redux" className="button button--black">
               <span>Вернуться назад</span>
             </Link>
           </div>}
