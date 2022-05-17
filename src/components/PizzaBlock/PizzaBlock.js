@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
 import { Button } from '../Button';
-// import PropTypes  from 'prop-types';
 
 export const PizzaBlock = ({ id, name, price, imageUrl, types, sizes, onClickAddPizza,addedCount }) => {
   
@@ -83,25 +82,3 @@ export const PizzaBlock = ({ id, name, price, imageUrl, types, sizes, onClickAdd
     </div>
   );
 };
-
-//Описываю тип пропсов которые прокидываю (библиотеку скачиваю prop-types)
-
-// PizzaBlock.propTypes = {
-//   id: PropTypes.number.isRequired,
-//   name: PropTypes.string.isRequired,
-//   price: PropTypes.number.isRequired,
-//   imageUrl: PropTypes.string.isRequired,
-//   types: PropTypes.arrayOf(PropTypes.number).isRequired,
-//   sizes: PropTypes.arrayOf(PropTypes.number).isRequired
-// }
-
-//дефолтное значение в случае ошибки
-
-// PizzaBlock.defaultProps = {
-//   id: Math.random(),
-//   name: 'Название пиццы',
-//   imageUrl: 'Картинка',
-//   price: 0,
-//   types: [],
-//   sizes: []
-// }

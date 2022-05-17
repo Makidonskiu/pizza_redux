@@ -2,6 +2,6 @@ import React from 'react'
 
 export const All = () => {
   return (
-    <h1>Что-то пошло не так</h1>
+    <h1 style={{textAlign: 'center'}}>Вы указали не верную ссылку!!!</h1>
   )
 }
