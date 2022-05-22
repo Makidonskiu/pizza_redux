@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pizza_redux/static/css/main.b6a5cfd7.css",
-    "main.js": "/pizza_redux/static/js/main.1f6ec7a4.js",
+    "main.js": "/pizza_redux/static/js/main.f99af3d8.js",
     "static/media/ProximaNova-Regular.eot": "/pizza_redux/static/media/ProximaNova-Regular.d97f8f32c098b28c3ab0.eot",
     "static/media/ProximaNova-Regular.ttf": "/pizza_redux/static/media/ProximaNova-Regular.b078618b41b9b6629ea0.ttf",
     "static/media/ProximaNova-Bold.eot": "/pizza_redux/static/media/ProximaNova-Bold.787088b281e017f8c449.eot",
@@ -18,10 +18,10 @@
     "static/media/pizza-logo.svg": "/pizza_redux/static/media/pizza-logo.56ac87032d8f6fdf863326acd06c0d97.svg",
     "index.html": "/pizza_redux/index.html",
     "main.b6a5cfd7.css.map": "/pizza_redux/static/css/main.b6a5cfd7.css.map",
-    "main.1f6ec7a4.js.map": "/pizza_redux/static/js/main.1f6ec7a4.js.map"
+    "main.f99af3d8.js.map": "/pizza_redux/static/js/main.f99af3d8.js.map"
   },
   "entrypoints": [
     "static/css/main.b6a5cfd7.css",
-    "static/js/main.1f6ec7a4.js"
+    "static/js/main.f99af3d8.js"
   ]
 }
