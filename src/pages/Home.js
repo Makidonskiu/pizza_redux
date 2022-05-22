@@ -23,7 +23,7 @@ export const Home = () => {
   //  *****************  Асинхронный запрос ****************************************
   useEffect(() => {
     dispatch(fetchPizzas(sortBy, category));
-  }, [category, sortBy]);
+  }, [sortBy, category]);
 
   const onSelectCategory = React.useCallback((index) => {
     dispatch(setCategory(index));

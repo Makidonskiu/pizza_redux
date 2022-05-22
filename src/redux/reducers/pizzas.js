@@ -17,7 +17,7 @@ export const pizzas = (state = initialState, action) => {
     case SET_LOADED: 
       return { 
         ...state, 
-        items: action.payload
+        isLoaded: action.payload
        };
     
     default:
