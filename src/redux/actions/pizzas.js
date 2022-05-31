@@ -9,7 +9,8 @@ export const setLoaded = val => ({
 
 export const fetchPizzas = (sortBy, category) => dispatch => {
     dispatch(setLoaded(false))
-    axios.get(`/pizzas?${category !== null ? `category=${category}` : ''}&_sort=${sortBy.type}&_order=${sortBy.order}`)
+    
+    axios.get(`https://628a9ad77886bbbb37a9e118.mockapi.io/items?${category !== null ? `category=${category}` : ''}&_sort=${sortBy.type}&_order=${sortBy.order}`)
     .then(( {data} ) => dispatch(setPizzas(data)));
 }
 
@@ -19,3 +20,5 @@ export const setPizzas = (data) => {
         payload: data
     }
 }
+
+// /pizzas
